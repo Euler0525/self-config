@@ -1,0 +1,325 @@
+{
+    // ================== Core Editor Settings ==========================
+    // Basic editing behavior
+    "editor.mouseWheelZoom": true,
+    "editor.fontSize": 15,
+    "editor.fontFamily": "Maple Mono NF",
+    "editor.fontLigatures": true,
+    "editor.lineNumbers": "relative",
+    "editor.linkedEditing": true,
+    "editor.multiCursorLimit": 100,
+    "editor.hover.delay": 100,
+    "editor.unicodeHighlight.ambiguousCharacters": false,
+    // Formatting and auto-actions
+    "editor.formatOnSave": true,
+    "editor.formatOnType": false,
+    "editor.wordWrap": "wordWrapColumn",
+    "editor.wordWrapColumn": 120,
+    // Visual aids
+    "editor.rulers": [
+        80,
+        120
+    ],
+    "editor.guides.bracketPairs": true,
+    "editor.guides.indentation": true,
+    "editor.inlayHints.enabled": "off",
+    "editor.inlayHints.fontFamily": "JetBrainsMonoNerdFontCompleteM",
+    "editor.codeLensFontFamily": "JetBrainsMono Nerd Font Mono",
+    "editor.minimap.sectionHeaderFontSize": 12,
+    // ================== File & Explorer Settings ==========================
+    "files.trimFinalNewlines": true,
+    "files.trimTrailingWhitespace": true,
+    "files.autoGuessEncoding": true,
+    "files.autoSave": "onFocusChange",
+    "files.associations": {
+        "*.json": "jsonc",
+        "*.m": "matlab"
+    },
+    "explorer.confirmDelete": false,
+    "explorer.confirmDragAndDrop": false,
+    // ================== UI & Theme Settings ==========================
+    "workbench.iconTheme": "vscode-icons",
+    "workbench.colorTheme": "Visual Studio Dark - C++",
+    "workbench.colorCustomizations": {
+        "activityBar.background": "#440030",
+        "titleBar.activeBackground": "#440030",
+        "titleBar.activeForeground": "#000000",
+        "editor.lineHighlightBorder": "#9fced11f",
+        "editor.lineHighlightBackground": "#1073cf2d"
+    },
+    "workbench.editor.empty.hint": "hidden",
+    "workbench.layoutControl.enabled": false,
+    // Unified font size settings
+    "scm.inputFontSize": 15,
+    "notebook.output.fontSize": 16,
+    "debug.console.fontSize": 16,
+    "chat.editor.fontSize": 16,
+    "chat.fontSize": 16,
+    "markdown.preview.fontSize": 16,
+    "scm.inputFontFamily": "JetBrainsMonoNerdFontCompleteM",
+    "debug.console.fontFamily": "JetBrainsMonoNerdFontCompleteM",
+    "notebook.lineNumbers": "on",
+    // ================== Terminal Configuration ==========================
+    "terminal.integrated.defaultProfile.windows": "Windows PowerShell",
+    "terminal.external.windowsExec": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+    "terminal.integrated.cursorStyle": "line",
+    "terminal.integrated.fontSize": 16,
+    "terminal.integrated.fontFamily": "JetBrainsMono Nerd Font Mono",
+    "terminal.integrated.commandsToSkipShell": [
+        "matlab.interrupt"
+    ],
+    "terminal.integrated.profiles.windows": {
+        "PowerShell": {
+            "source": "PowerShell",
+            "icon": "terminal-powershell",
+            "path": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+            "args": [
+                "-nologo"
+            ]
+        },
+        "Tcl Shell": {
+            "path": "vivado.bat",
+            "args": [
+                "-mode",
+                "tcl"
+            ],
+            "icon": "terminal-cmd"
+        }
+    },
+    // ================== Version Control & Diff Settings ==========================
+    "git.openRepositoryInParentFolders": "never",
+    "git.autofetch": true,
+    "diffEditor.wordWrap": "off",
+    "diffEditor.maxComputationTime": 0,
+    "diffEditor.ignoreTrimWhitespace": false,
+    "output.smartScroll.enabled": false,
+    // ================== Vim Configuration ==========================
+    "vim.useCtrlKeys": false,
+    "vim.visualstar": true,
+    "vim.useSystemClipboard": true,
+    "vim.textwidth": 120,
+    "vim.insertModeKeyBindings": [
+        {
+            "before": [
+                "j",
+                "k"
+            ],
+            "after": [
+                "<Esc>"
+            ]
+        },
+        {
+            "before": [
+                "k",
+                "l"
+            ],
+            "after": [
+                "<Space>",
+                "<Space>"
+            ]
+        }
+    ],
+    "vim.normalModeKeyBindingsNonRecursive": [
+        {
+            "before": [
+                "<Space>"
+            ],
+            "after": [
+                ":"
+            ]
+        },
+        {
+            "before": [
+                "Q"
+            ],
+            "commands": [
+                ":wq"
+            ]
+        },
+        {
+            "before": [
+                "W"
+            ],
+            "commands": [
+                ":w"
+            ]
+        },
+        {
+            "before": [
+                "v"
+            ],
+            "after": [
+                "<esc>",
+                "C-v"
+            ],
+            "command": "-visualmode",
+            "when": "editorTextFocus && !editorReadonly"
+        }
+    ],
+    "vim.commandLineModeKeyBindingsNonRecursive": [],
+    // ================== Language-Specific Settings ==========================
+    // Python
+    "python.defaultInterpreterPath": "C:\\Software\\Anaconda\\python.exe",
+    "python.terminal.activateEnvironment": false,
+    "[python]": {
+        "editor.formatOnType": true,
+        "editor.defaultFormatter": "ms-python.autopep8"
+    },
+    // Verilog
+    "verilog.ctags.path": "C:\\Software\\ctags\\ctags.exe",
+    "verilog.linting.linter": "modelsim",
+    "verilog.runInTerminal": true,
+    "verilog.linting.modelsim.work": "C:\\Software\\Xilinx\\XLib",
+    "[verilog]": {
+        "editor.defaultFormatter": "mshr-h.veriloghdl"
+    },
+    // MATLAB
+    "matlab.matlabpath": "C:\\SoftWare\\MATLAB\\R2025b\\bin\\matlab.exe",
+    "matlab.mlintpath": "C:\\SoftWare\\MATLAB\\R2025b\\bin\\win64\\mlint.exe",
+    "matlab.linterEncoding": "utf8",
+    // LaTeX
+    "latex-workshop.showContextMenu": true,
+    "latex-workshop.formatting.latex": "latexindent",
+    "latex-workshop.bibtex-format.tab": "4 spaces",
+    "latex-workshop.intellisense.package.enabled": true,
+    "latex-workshop.synctex.afterBuild.enabled": true,
+    "latex-workshop.view.pdf.viewer": "tab",
+    "latex-workshop.view.pdf.ref.viewer": "auto",
+    "latex-workshop.view.pdf.autoRefresh.enabled": true,
+    "latex-workshop.view.pdf.viewOnChange": true,
+    "latex-workshop.latex.autoBuild.run": "onSave",
+    "latex-workshop.latex.recipe.default": "lastUsed",
+    "latex-workshop.latex.tools": [
+        // {
+        //     "name": "xelatex",
+        //     "command": "xelatex",
+        //     "args": [
+        //         "-synctex=1",
+        //         "-interaction=nonstopmode",
+        //         "-file-line-error",
+        //         "%DOC%"
+        //     ]
+        // },
+        {
+            "name": "biber",
+            "command": "biber",
+            "args": [
+                "%DOCFILE%"
+            ]
+        },
+        {
+            "name": "pdflatex",
+            "command": "pdflatex",
+            "args": [
+                "-synctex=1",
+                "-interaction=nonstopmode",
+                "-file-line-error",
+                "%DOC%"
+            ]
+        },
+        {
+            "name": "bibtex",
+            "command": "bibtex",
+            "args": [
+                "%DOC%"
+            ]
+        }
+    ],
+    "latex-workshop.latex.recipes": [
+        {
+            "name": "xelatex",
+            "tools": [
+                "xelatex"
+            ]
+        },
+        {
+            "name": "pdflatex",
+            "tools": [
+                "pdflatex"
+            ]
+        },
+        {
+            "name": "bibtex",
+            "tools": [
+                "bibtex"
+            ]
+        }
+    ],
+    // Web-related
+    "[html]": {
+        "editor.defaultFormatter": "vscode.html-language-features"
+    },
+    "[javascript]": {
+        "editor.defaultFormatter": "vscode.typescript-language-features"
+    },
+    "javascript.updateImportsOnFileMove.enabled": "always",
+    // C/C++
+    "C_Cpp.clang_format_style": "{ BasedOnStyle: LLVM, IndentWidth: 4, BreakBeforeBraces: Attach}",
+    "C_Cpp.intelliSenseEngine": "Tag Parser",
+    // Java
+    "java.jdt.ls.java.home": "C:\\Software\\Java\\jdk-24",
+    "java.configuration.maven.userSettings": "C:\\Software\\Java\\Maven\\conf\\settings.xml",
+    // LeetCode
+    "leetcode.endpoint": "leetcode-cn",
+    "leetcode.hint.configWebviewMarkdown": false,
+    "leetcode.workspaceFolder": "C:\\Users\\Euler0525\\.leetcode",
+    "leetcode.defaultLanguage": "cpp",
+    "leetcode.hint.commandShortcut": false,
+    "leetcode.hint.commentDescription": false,
+    // ================== Debug & Run Settings ==========================
+    "debug.allowBreakpointsEverywhere": true,
+    "code-runner.runInTerminal": true,
+    "code-runner.enableAppInsights": false,
+    "jupyter.askForKernelRestart": false,
+    "jupyter.widgetScriptSources": [
+        "jsdelivr.com",
+        "unpkg.com"
+    ],
+    // ================== Extension Settings ==========================
+    // General extensions
+    "RainbowBrackets.depreciation-notice": false,
+    "liveServer.settings.donotShowInfoMsg": true,
+    "liveServer.settings.port": 50001,
+    "codesnap-plus.transparentBackground": true,
+    "vsicons.dontShowNewVersionMessage": true,
+    "telemetry.telemetryLevel": "off",
+    "security.workspace.trust.untrustedFiles": "open",
+    "security.workspace.trust.banner": "always",
+    "security.workspace.trust.enabled": false,
+    // Specific tools
+    "hexeditor.columnWidth": 16,
+    "hexeditor.showDecodedText": true,
+    "hexeditor.defaultEndianness": "little",
+    "hexeditor.inspectorType": "aside",
+    "maven.executable.path": "C:\\Software\\Java\\Maven\\bin\\mvn.cmd",
+    "maven.terminal.useJavaHome": true,
+    "maven.terminal.customEnv": [
+        {
+            "environmentVariable": "JAVA_HOME",
+            "value": "C:\\Software\\Java\\jdk-24"
+        }
+    ],
+    "roo-cline.allowedCommands": [
+        "git log",
+        "git diff",
+        "git show"
+    ],
+    "roo-cline.deniedCommands": [],
+    "hediet.vscode-drawio.resizeImages": null,
+    "cmake.showOptionsMovedNotification": false,
+    "cmake.pinnedCommands": [
+        "workbench.action.tasks.configureTaskRunner",
+        "workbench.action.tasks.runTask"
+    ],
+    "makefile.configureOnOpen": true,
+    "markdown-preview-enhanced.enablePreviewZenMode": false,
+    "markdown-preview-enhanced.enableExtendedTableSyntax": true,
+    // ================== Remote & Miscellaneous Settings ==========================
+    "remote.SSH.remotePlatform": {
+        "region-41.seetacloud.com": "linux",
+        "UsableXAI": "linux",
+        "connect.beijinga.seetacloud.com": "linux",
+        "AutoDL": "linux",
+        "192.168.1.101": "linux"
+    }
+}
